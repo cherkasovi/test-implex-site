@@ -20,6 +20,7 @@ test('Visual Comparison Test Demo', async ({ page }) => {
 
   // added comment
   // another comment
+  // another one
 
   await percySnapshot.default(page, 'Home page');
 });
