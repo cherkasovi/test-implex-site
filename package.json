@@ -4,7 +4,7 @@
     "description": "Test project for Implex site",
     "main": "index.js",
     "scripts": {
-        "percy:test": "npx percy exec -- npx playwright test --project=chrome"
+        "percy:test": "npx percy exec -- npx playwright test --project=chromium"
     },
     "repository": {
         "type": "git",

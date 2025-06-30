@@ -6,6 +6,9 @@ test('Visual Comparison Test Demo', async ({ page }) => {
 
   //expect(await page.screenshot()).toMatchSnapshot({ maxDiffPixelRatio: 0.02 });
 
+  await page.locator('#cookiescript_accept').click();
+  await expect(page.locator('#cookiescript_accept')).toBeHidden();
+
   await percySnapshot.default(page, 'Home page');
   const h2 = 'div.text-content > h2.title';
 
