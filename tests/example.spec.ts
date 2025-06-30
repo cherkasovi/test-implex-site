@@ -10,6 +10,7 @@ test('Visual Comparison Test Demo', async ({ page }) => {
   await expect(page.locator('#cookiescript_accept')).toBeHidden();
 
   // added comment
+  // another comment
 
   await percySnapshot.default(page, 'Home page');
   const h2 = 'div.text-content > h2.title';
