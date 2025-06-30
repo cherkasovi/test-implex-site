@@ -19,8 +19,7 @@ test('Visual Comparison Test Demo', async ({ page }) => {
   await homePage.verifyCookiesBadgeVisible();
 
   // added comment
-  // another comment
-  // another one
+  // another commen
 
   await percySnapshot.default(page, 'Home page');
 });
