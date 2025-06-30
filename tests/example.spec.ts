@@ -6,6 +6,8 @@ test('Visual Comparison Test Demo', async ({ page }) => {
 
   //expect(await page.screenshot()).toMatchSnapshot({ maxDiffPixelRatio: 0.02 });
 
+  await percySnapshot.default(page, 'Coockies popup', { scope: '#cookiescript_injected' });
+
   await page.locator('#cookiescript_accept').click();
   await expect(page.locator('#cookiescript_accept')).toBeHidden();
   await expect(page.locator('#cookiescript_badgeimage')).toBeVisible();
