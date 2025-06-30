@@ -35,10 +35,10 @@ export default defineConfig({
   /* Configure projects for major browsers */
   projects: [
     {
-      name: 'chrome',
+      name: 'chromium',
       use: {
         ...devices['Desktop Chrome'],
-        channel: 'chrome',
+        channel: 'chromium',
         baseURL: 'https://implex.dev',
         viewport: { width: 1920, height: 1080 },
       },
