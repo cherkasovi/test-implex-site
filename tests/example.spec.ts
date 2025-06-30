@@ -11,6 +11,7 @@ test('Visual Comparison Test Demo', async ({ page }) => {
 
   // added comment
   // another comment
+  // another change
 
   await percySnapshot.default(page, 'Home page');
   const h2 = 'div.text-content > h2.title';
